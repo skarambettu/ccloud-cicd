@@ -1,0 +1,25 @@
+{
+  "rbacs": {
+    "topics": [
+      {
+        "role": "DeveloperWrite",
+        "resource": "stephane",
+        "principal": "test-sandy1"
+      }
+    ],
+    "group": [
+      {
+        "resource": "*",
+        "role": "DeveloperRead",
+        "principal": "test-sandy2"
+      }
+    ],
+    "schema_registry": [
+      {
+        "role": "DeveloperRead",
+        "resource": "stephane-value",
+        "principal": "test-sandy2"
+      }
+    ]
+  }
+}

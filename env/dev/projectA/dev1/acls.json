@@ -1,0 +1,157 @@
+{
+    "acls": [
+        {
+          "resource_type": "TOPIC",
+          "resource_name": "stephane",
+          "pattern_type": "LITERAL",
+          "principal": "test-sandy1",
+          "host": "*",
+          "operation": "WRITE",
+          "permission": "ALLOW"
+        },
+        {
+          "resource_type": "GROUP",
+          "resource_name": "console-consumer",
+          "pattern_type": "PREFIXED",
+          "principal": "test-sandy2",
+          "host": "*",
+          "operation": "READ",
+          "permission": "ALLOW"
+        },
+        {
+          "resource_type": "TOPIC",
+          "resource_name": "stephane",
+          "pattern_type": "LITERAL",
+          "principal": "test-sandy1",
+          "host": "172.56.84.247",
+          "operation": "WRITE",
+          "permission": "DENY"
+        },
+        {
+            "resource_type": "TOPIC",
+            "resource_name": "stephane",
+            "pattern_type": "LITERAL",
+            "principal": "test-sandy4",
+            "host": "172.56.84.247",
+            "operation": "WRITE",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "CLUSTER",
+            "resource_name": "kafka-cluster",
+            "pattern_type": "LITERAL",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "DESCRIBE",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "TOPIC",
+            "resource_name": "testabcd",
+            "pattern_type": "LITERAL",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "READ",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "TOPIC",
+            "resource_name": "dlq-lcc",
+            "pattern_type": "PREFIXED",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "CREATE",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "TOPIC",
+            "resource_name": "dlq-lcc",
+            "pattern_type": "PREFIXED",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "WRITE",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "TOPIC",
+            "resource_name": "success-lcc",
+            "pattern_type": "PREFIXED",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "CREATE",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "TOPIC",
+            "resource_name": "success-lcc",
+            "pattern_type": "PREFIXED",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "WRITE",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "TOPIC",
+            "resource_name": "error-lcc",
+            "pattern_type": "PREFIXED",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "CREATE",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "TOPIC",
+            "resource_name": "error-lcc",
+            "pattern_type": "PREFIXED",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "WRITE",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "TOPIC",
+            "resource_name": "connect-lcc",
+            "pattern_type": "PREFIXED",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "READ",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "TOPIC",
+            "resource_name": "sample-data",
+            "pattern_type": "LITERAL",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "READ",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "TOPIC",
+            "resource_name": "sample_data",
+            "pattern_type": "LITERAL",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "READ",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "GROUP",
+            "resource_name": "connect-lcc",
+            "pattern_type": "PREFIXED",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "READ",
+            "permission": "ALLOW"
+          },
+          {
+            "resource_type": "TOPIC",
+            "resource_name": "topic_23",
+            "pattern_type": "LITERAL",
+            "principal": "test-sandy4",
+            "host": "*",
+            "operation": "READ",
+            "permission": "ALLOW"
+          }
+    ]
+  }

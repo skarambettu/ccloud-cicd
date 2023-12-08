@@ -1,0 +1,14 @@
+{
+    "schemas": [
+      {
+        "subject": "stephane-key",
+        "path": "/Users/skarambettu/Desktop/powerex/admin-schema-v2/purchase.avsc",
+        "format": "AVRO"
+      },
+      {
+        "subject": "stephane-value",
+        "path": "/Users/skarambettu/Desktop/powerex/admin-schema-v2/purchase.avsc",
+        "format": "AVRO"
+      }
+    ]
+  }

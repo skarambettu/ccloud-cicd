@@ -1,0 +1,32 @@
+{
+    "apikeys": {
+       "kafka": [
+          {
+            "principal": "test-sandy1"
+          },
+          {
+            "principal": "test-sandy2"
+          },
+          {
+            "principal": "test-sandy3"
+          },
+          {
+            "principal": "test-sandy4"
+          }
+       ],
+      "schema_registry": [
+          {
+            "principal": "test-sandy1"
+          },
+          {
+            "principal": "test-sandy2"
+          },
+          {
+            "principal": "test-sandy3"
+          },
+          {
+            "principal": "test-sandy4"
+          }
+      ]
+    }
+  }
