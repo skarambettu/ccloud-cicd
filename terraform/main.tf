@@ -199,3 +199,24 @@ module "acl" {
   }
 }
 
+locals {
+  connectors_with_names = [ for connector in local.connectors.connectors : connector if connector.name != "" ]
+}
+
+module "connector" {
+  for_each = { for connector in local.connectors_with_names : connector.name => connector }
+  source   = "./modules/snowflake-sink"
+  env_id          = var.confluent_environment
+  kafka_id        = var.confluent_kafka_cluster
+  principal       = each.value.principal
+  name            = each.value.name
+  url             = each.value.url
+  user            = each.value.user
+  db_name         = each.value.db_name
+  schema_name     = each.value.schema_name
+  topics          = each.value.topics
+  format          = each.value.format
+  class           = each.value.class
+  key             = each.value.key
+}
+
